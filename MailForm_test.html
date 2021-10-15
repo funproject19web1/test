@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+	<title>メール送信画面</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<!-- jquery読み込み -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- CSS読み込み -->
+	<link rel="stylesheet" href="MailForm_test.css">
+	<link rel="stylesheet" href="MailForm_test_mobile.css">
+</head>
+
+<body>
+	<!-- ほろ酔い -->
+	<!-- <section id="horo">
+		<div class="horo-first">
+			<p1>
+				本サイトでは、フィッシング詐欺を疑似的に体験することができます。
+				<br><br>
+				個人情報の漏洩防止のために、メールアドレス等の<br><br>個人情報を
+
+				入力する際は架空のものを使用してください。
+				<br><br>
+				疑似体験者様がこれから入力する情報は、記録されないため安心して体験してください。
+			</p1>
+			<button id="button1" type="button" name="button1">疑似体験を始める</button>
+			<a href="topのリンク">TOPに戻る</a>
+		</div>
+	</section> -->
+
+	<!--お問合せフォーム-->
+	<section id="frm">
+		<!-- 注意 -->
+		<p1>※注意</p1>
+		<br>
+		<p2>個人情報を保護するために、メールアドレス、パスワード、
+			名前、電話番号は架空のものを使用してください。
+			<br>
+			<推奨>メールアドレス:(好きな文字,数字)@fun.ac.jp
+				<br>
+		</p2>
+		<br> <br> <br> <br><br class="br-sp" />
+		<hr>
+		<br>
+		<p3>あなたのアカウントは一時的にロックされています。</p3>
+		<br>
+		<p4>アカウントの情報を更新するために下記フォームへ入力してください
+		</p4>
+		<br> <br>
+
+
+		<h1>入力フォーム</h1>
+		<p align="center">
+			<input id="auto-comp" type="button" value="入力省略" onclick="auto_completion()" />
+		</p>
+		<p class="err"></p>
+		<form>
+			<table>
+				<tr>
+					<th><span>必須</span>お名前</th>
+					<td><input id="my-name" type="text" name="name"></td>
+				</tr>
+				<tr>
+					<th>性別</th>
+					<td>
+						<input id="gen" type="radio" name="gender" value="男性" checked="checked"> 男性　
+						<input type="radio" name="gender" value="女性"> 女性
+					</td>
+				</tr>
+				<tr>
+					<th><span>必須</span>電話番号</th>
+					<td><input id="phone-num" type="text" name="tel"></td>
+				</tr>
+				<tr>
+					<th><span>必須</span>メールアドレス</th>
+					<td><input id="address" type="text" name="mail"></td>
+				</tr>
+				<tr>
+					<th><span>必須</span>パスワード</th>
+					<td><input id="first-pass" type="password" name="password" required></td>
+				</tr>
+				<tr>
+					<th><span>必須</span>Re)パスワード</th>
+					<td><input id="re-pass" type="password" name="confirm" oninput="CheckPassword(this)" required></td>
+				</tr>
+			</table>
+		</form>
+		<div class="submit-button1" id="submit-button1"><button>送信する</button></div>
+
+	</section>
+
+	<!--完了画面-->
+	<section id="end">
+		<div id="finish">
+			<div id="finish1">
+				<h1>メール送信完了</h1>
+				<p>先ほど入力していただいたメールアドレスへ認証用のURLを送信いたしました</p>
+				<p>メールを確認し手続きを行ってください</p>
+			</div>
+			<br><br>
+			<button id="submit-shut">閉じる</button>
+		</div>
+		<br>
+
+		<div id="caution">
+			<h1>STOP！</h1>
+			<div id="caution1">
+				<div id="finish2">
+				</div>
+				<p>
+					攻撃者はすでに上記の個人情報を盗んでいます。
+					<br><br>
+					このような状況を防ぐためにフィッシング詐欺の対策について学びましょう。
+				</p>
+				<br><br><br>
+				<button id="submit-last">対策ページへ</button>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="../JavaScript/MailForm_test.js"></script>
+	<script type="text/javascript">
+		document.getElementById("submit-last").onclick = function() {
+			alert('最終画面へ');
+			location.href = "../HTML/LastPage.html";
+		};
+	</script>
+	<script type="text/javascript">
+		const target1 = document.getElementById('button1');
+		const target = document.getElementById('horo');
+		target1.addEventListener('click', () => {
+			target.style.display = "none";
+		}, false);
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			$('#submit-shut').click(function() {
+				$('#finish').hide();
+				$('#caution').show();
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		function auto_completion() {
+			document.getElementById("my-name").value = "フィッシング太郎";
+			//document.getElementById("gen").value = "bbb";
+			document.getElementById("phone-num").value = "050-1234-5678";
+			document.getElementById("first-pass").value = "phishing0123";
+			document.getElementById("re-pass").value = "phishing0123";
+			document.getElementById("address").value = "phishing0721@fun.ac.jp";
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="mobile_page.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title></title>
+</head>
+
+<body>
+  <div class="head-container">
+    <div class="box"><a href="#">
+        <<メールボックス< /a>
+    </div>
+    <div class="edit"><a href="#">編集</a></div>
+  </div>
+  <div class="jushin">
+    <h1>受信</h1>
+  </div>
+  <div class="column">
+    <div class="title" ontouchstart="">
+      <div class="title-time" id="title">
+        <p1>title</p1>
+        <p2>time</p2>
+      </div>
+      <p3>本文</p3>
+      <br><br>
+    </div>
+    <div class="title-time">
+      本文
+    </div> <br><br>
+    <div class="title-time">
+      本文
+    </div> <br><br>
+    <div class="title-time">
+      本文
+    </div> <br><br>
+    <div class="title-time">
+      本文
+    </div> <br><br>
+    <div class="title-time">
+      本文
+    </div> <br><br>
+  </div>
+  <div class="back" target="_blank">
+    <div class="honbun">
+      aaa
+    </div>
+  </div>
+  <script type="text/javascript">
+    var $target = document.querySelector('.title')
+    var $button = document.querySelector('.back')
+    $target.addEventListener('click', function() {
+      $('.back').fadeIn();
+    })
+  </script>
+</body>
+
+</html>

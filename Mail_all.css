@@ -1,0 +1,131 @@
+.side {
+  background-color:#ff838b;
+  width:300px;
+  height:864px;
+  text-align:center;
+}
+.side p{
+  font-family: Impact;
+  font-size: 48px;
+}
+
+article {
+  display:flex;/*サイドバーとメインコンテンツを横並びにする                指定をした*/
+}
+
+/*メール受信ボックスの全体設定*/
+.Receive_box {
+  display: flex;
+  flex-direction: column;
+}
+
+/*メール受信ボックスのurlがない(サブ)の設定*/
+.Receive_box .item  .item1{
+  padding: 15px;
+  background: #43A1AC;
+  color: #1A0DAB;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*メール受信ボックスのurlがある(メイン)の設定*/
+.Receive_box .item2 {
+  padding: 15px;
+  background: #43A1AC;
+  color: #1A0DAB;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*メール受信ボックスの全体設定*/
+.Out_box {
+  display: flex;
+  flex-direction: column;
+}
+
+/*メール受信ボックスのurlがない(サブ)の設定*/
+.Out_box .item {
+  padding: 15px;
+  background: #43A1AC;
+  color: #1A0DAB;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*メール受信ボックスのurlがある(メイン)の設定*/
+.Out_box .item2 {
+  padding: 15px;
+  background: #43A1AC;
+  color: #1A0DAB;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Draft_box .item{
+  text-align:center
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 1020px;
+  margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/3);
+  height: 50px;
+  border-bottom: 3px solid #5ab4bd;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked~#all_content,
+#programming:checked~#programming_content,
+#design:checked~#design_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked+.tab_item {
+  background-color: #5ab4bd;
+  color: #fff;
+}

@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+html {
+  background-color: #66FFFF;
+}
+
+header {
+  background: #00CCFF;
+  height: 30px;
+}
+@media screen and (min-width: 650px){
+  .br-pc { display:block; }
+  .br-sp { display:none; }
+}
+@media screen and (max-width: 650px){
+  .br-pc { display:none; }
+  .br-sp { display:block; }
+}
+#header-menu {
+  margin-top: 0;
+  color: white;
+  font-size: 13px;
+  line-height: 30px;
+}
+#horo {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  color: black;
+  /* background-color: gray; */
+  /* background: rgba(255, 255, 255, 0.75); */
+  background: rgba(0, 0, 0, 0.9);
+  background-size: 500px,1000px;
+  /* opacity: 0.85; */
+
+   z-index: 1;
+}
+
+.horo-first {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.horo-first p {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: red;
+  font-weight: 800;
+  font-size: 20px;
+  width: 800px;;
+ height: 400px;
+ margin-bottom: 10px;
+  border: dotted;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-color:black;
+}
+
+#button1 {
+  background-color: #9900FF;
+  color: white;
+  margin-top: 20px;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding-left: 35px;
+  padding-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 800;
+  font-size: 24px;
+  width: 10%;
+  height: 5%;
+  display: flex;
+  z-index: 1;
+}
+
+.horo-first a {
+  font-weight: 700;
+  padding-top: 6px;
+  width: 10%;
+  height: 6%;
+  /* background-color: #9900FF; */
+  color: blue;
+  text-decoration: none;
+}
+
+.mailform{
+  z-index: 1;
+}
+
+.container {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+}
+
+.box {
+  display: table-cell;
+  text-align: center;
+  color: #fff;
+  height: 600px;
+}
+
+.left-display {
+  background-color: white;
+  vertical-align: top;
+  width: 15%;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.left-display button {
+  text-align: center;
+}
+
+.left-display p {
+  text-align: left;
+  font-size: 15px;
+  color: black;
+}
+
+.left-display h1 {
+  text-align: center;
+  font-size: 15px;
+  color: blue;
+}
+
+.right-display {
+  background: white;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.right-display p1 {
+  font-size: 15px;
+  color: black;
+}
+
+.right-display p2 {
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+
+.right-heading p{
+  font-size: 15px;
+  color: black;
+  background-color: #CCFFFF;
+  border: solid;
+  border-color: #66FFFF;
+}
+/*------------------------*/
+.secList {
+  font-size:15px;
+}
+.et_pb_module{
+  color: black;
+}
+.et_pb_text_inner1 {
+  position:absolute;
+  top: 200px;
+  left: 215px;
+  background-color: red;
+  height: 250px;
+  width: 1120px;
+  margin-top: 120px;
+  margin-bottom: 0px;
+}
+#mailform a{
+  text-decoration: none;
+  background-color: white;
+}
+
+/* スマホの場合 */
+@media screen and (max-width:480px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+  }
+  #horo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-size:100%;
+  }
+  /* .horo-first p{
+    width: auto;
+  } */
+}
