@@ -1,22 +1,20 @@
-/*
-** The Header Media Queries **
-** Tweak as per your needs **
-*/
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  /*
-  padding: 20px;
-  */
 }
 
 header {
   position: fixed;
   top: 0;
 }
-
+/*------------ヘッダーの設定------------*/
+.site-header {
+  /*ヘッダーの背景、ヘッダーの大本*/
+  background-color: #def7ff;
+  width: 100%;
+}
 
 .brand {
   /*ヘッダータイトル設定*/
@@ -28,17 +26,53 @@ header {
   /*アンダーライン削除*/
 }
 
-.site-header {
-  /*ヘッダーの背景*/
-  background-color: #def7ff;
-  width: 100%;
+.Bar {
+  /*メニューバー大本の設定*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1b2538;
 }
 
-.site-header__wrapper {
+.Bar li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
 }
 
-.one{
+.Bar li:last-child {
+  border-right: none;
+}
+
+.Bar li a {
+  /*メニューバーの文字設定*/
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+.Bar li a:hover:not(.active) {
+  background-color: #a9bce2;
+}
+
+.Bar .active {
+  background-color: #da3c41;
+}
+
+/*------------『フィッシングの対策』の設定------------*/
+/*-----------1つ目項目の設定-----------*/
+.one {
   padding: 3em 10em 0;
+}
+
+.one p {
+  /*div one におけるpタグの設定*/
+  font-size: 18px;
+  font-family: "メイリオ", "Meiryo";
+  font-weight: bold;
 }
 
 .one h1 {
@@ -48,7 +82,7 @@ header {
   margin-top: 100px;
 }
 
-.one .one_a{
+.one .one_a {
   padding: 0 0 0.5em;
 }
 
@@ -58,77 +92,50 @@ header {
   font-weight: bold;
 }
 
-.one .one_img {
-  text-align: center;
-}
-
-.one .one_img img {
-  width: 26%;
-  /* 横幅を割合で指定 */
-  height: auto;
-  /*
-   text-align: center;
-   */
-}
-
-.one .two_img {
-  text-align: center;
-}
-
-.one .two_img img {
-  width: 26%;
-  /* 横幅を割合で指定 */
-  height: auto;
-  /*
-   text-align: center;
-   */
-}
-
-.one .three_img {
-  text-align: center;
-}
-
-.one .three_img img {
-  width: 26%;
-  /* 横幅を割合で指定 */
-  height: auto;
-  /*
-   text-align: center;
-   */
-}
-
-.one p {
-  /*『①フィッシングの対策』の説明についての設定*/
-  font-size: 18px;
-  font-family: "メイリオ", "Meiryo";
-  font-weight: bold;
-}
-
-.two h2 {
-  /*『②他のサイバー攻撃について』のタイトルについての設定*/
-  font-size: 32px;
-  border-bottom: 4px solid #b0c4de;
-}
-
 .one .box6 {
+  /*点線のボックスの設定*/
   padding: 0.5em 1em;
-  margin: 2em 0;
+  margin: 4em 0;
   background: #f0f7ff;
   border: dashed 2px #5b8bd0;
   /*点線*/
 }
 
 .one .box6 p {
+  /*点線のボックスの文字設定*/
   margin: 0;
   padding: 0;
 }
 
+.one .point_1 {
+  /*画像とポイントに関しての設定*/
+  display: flex;
+  justify-content: center;
+  /* 水平方向 */
+  align-items: center;
+  /* 垂直方向 */
+}
+
+.one .one_img {
+  /*Ⅰの画像についての設定～その１～*/
+  text-align: left;
+}
+
+.one .one_img img {
+  /*Ⅰの画像についての設定～その２～*/
+  width: 120%;
+  /* 横幅を割合で指定 */
+  height: auto;
+}
+
 .one .box29 {
-  margin: 2em 0;
+  /*ポイントボックスについての設定*/
+  margin: 0 5em 0;
   background: #dcefff;
 }
 
 .one .box29 .box-title {
+  /*ボックスの『Point』に関しての設定*/
   font-size: 1.2em;
   background: #5fb3f5;
   text-align: center;
@@ -138,14 +145,68 @@ header {
 }
 
 .one .box29 p {
-  padding: 0px;
+  /*ポイントボックスの文字についての設定*/
+  padding: 10px;
   margin: 0;
 }
 
+
+/*-----------２つ目項目の設定-----------*/
+.one .point_2 {
+  /*画像とポイントに関しての設定*/
+  display: flex;
+  justify-content: center;
+  /* 水平方向 */
+  align-items: center;
+  /* 垂直方向 */
+}
+
+
+.one .two_img {
+    /*Ⅱの画像についての設定～その１～*/
+  text-align: left;
+}
+
+.one .two_img img {
+  /*Ⅱの画像についての設定～その１～*/
+  width: 220%;
+  /* 横幅を割合で指定 */
+  height: auto;
+}
+
+/*-----------３つ目項目の設定-----------*/
+.one .point_3 {
+  /*画像とポイントに関しての設定*/
+  display: flex;
+  justify-content: center;
+  /* 水平方向 */
+  align-items: center;
+  /* 垂直方向 */
+}
+
+.one .three_img {
+  /*Ⅲの画像についての設定～その１～*/
+  text-align: left;
+}
+
+.one .three_img img {
+  /*Ⅲの画像についての設定～その１～*/
+  width: 90%;
+  /* 横幅を割合で指定 */
+  height: auto;
+}
+
+/*------------『他のサイバー攻撃について』の設定------------*/
 .two {
   /*『②他のサイバー攻撃について』の全体についての設定*/
   margin: 2em 0;
   padding: 3em 10em 0;
+}
+
+.two h2 {
+  /*『②他のサイバー攻撃について』のタイトルについての設定*/
+  font-size: 32px;
+  border-bottom: 4px solid #b0c4de;
 }
 
 .two label {
@@ -194,7 +255,10 @@ header {
   background: #f7f7f7;
 }
 
-.three{
+
+/*------------『アンケートについてについて』の設定------------*/
+
+.three {
   padding: 3em 10em 0;
 }
 
@@ -202,39 +266,4 @@ header {
   /*『②他のサイバー攻撃について』のタイトルについての設定*/
   font-size: 32px;
   border-bottom: 4px solid #b0c4de;
-}
-
-/*---------------------------------------------------------------------------------------*/
-.Bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #1b2538;
-}
-
-.Bar li {
-  float: left;
-  border-right: 1px solid #bbbbbb;
-}
-
-.Bar li:last-child {
-  border-right: none;
-}
-
-.Bar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  float: left;
-}
-
-.Bar li a:hover:not(.active) {
-  background-color: #a9bce2;
-}
-
-.Bar .active {
-  background-color: #da3c41;
 }
