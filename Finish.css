@@ -1,0 +1,240 @@
+/*
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /*
+  padding: 20px;
+  */
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+
+.brand {
+  /*ヘッダータイトル設定*/
+  font-weight: bold;
+  font-size: 40px;
+  color: #000000;
+  /*黒*/
+  text-decoration: none;
+  /*アンダーライン削除*/
+}
+
+.site-header {
+  /*ヘッダーの背景*/
+  background-color: #def7ff;
+  width: 100%;
+}
+
+.site-header__wrapper {
+}
+
+.one{
+  padding: 3em 10em 0;
+}
+
+.one h1 {
+  /*『①フィッシングの対策』についての設定*/
+  font-size: 32px;
+  border-bottom: 4px solid #b0c4de;
+  margin-top: 100px;
+}
+
+.one .one_a{
+  padding: 0 0 0.5em;
+}
+
+.one .one_a p {
+  font-size: 24px;
+  font-family: "游ゴシック", "Yu Gothic";
+  font-weight: bold;
+}
+
+.one .one_img {
+  text-align: center;
+}
+
+.one .one_img img {
+  width: 26%;
+  /* 横幅を割合で指定 */
+  height: auto;
+  /*
+   text-align: center;
+   */
+}
+
+.one .two_img {
+  text-align: center;
+}
+
+.one .two_img img {
+  width: 26%;
+  /* 横幅を割合で指定 */
+  height: auto;
+  /*
+   text-align: center;
+   */
+}
+
+.one .three_img {
+  text-align: center;
+}
+
+.one .three_img img {
+  width: 26%;
+  /* 横幅を割合で指定 */
+  height: auto;
+  /*
+   text-align: center;
+   */
+}
+
+.one p {
+  /*『①フィッシングの対策』の説明についての設定*/
+  font-size: 18px;
+  font-family: "メイリオ", "Meiryo";
+  font-weight: bold;
+}
+
+.two h2 {
+  /*『②他のサイバー攻撃について』のタイトルについての設定*/
+  font-size: 32px;
+  border-bottom: 4px solid #b0c4de;
+}
+
+.one .box6 {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  background: #f0f7ff;
+  border: dashed 2px #5b8bd0;
+  /*点線*/
+}
+
+.one .box6 p {
+  margin: 0;
+  padding: 0;
+}
+
+.one .box29 {
+  margin: 2em 0;
+  background: #dcefff;
+}
+
+.one .box29 .box-title {
+  font-size: 1.2em;
+  background: #5fb3f5;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.one .box29 p {
+  padding: 0px;
+  margin: 0;
+}
+
+.two {
+  /*『②他のサイバー攻撃について』の全体についての設定*/
+  margin: 2em 0;
+  padding: 3em 10em 0;
+}
+
+.two label {
+  /*『②他のサイバー攻撃について』のタグについての設定*/
+  display: block;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  /*一般的な太字の太さです。（数値で700を指定した場合と同じ）*/
+  background: #999;
+  cursor: pointer;
+  /*カーソルアイコンが指し指になる*/
+}
+
+.two input[type="checkbox"] {
+  /*『②他のサイバー攻撃について』のタグCLICKについての設定*/
+  display: none;
+}
+
+.two .content {
+  /*『②他のサイバー攻撃について』のタグについての設定*/
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-family: "游ゴシック", "Yu Gothic";
+}
+
+.two .content {
+  /*『②他のサイバー攻撃について』のタグについての設定*/
+  font-size: 18px;
+  font-family: "游ゴシック", "Yu Gothic";
+}
+
+.two .content span {
+  /*『②他のサイバー攻撃について』のタグについての設定*/
+  font-size: 22px;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: red;
+}
+
+.switch:checked+.content {
+  height: auto;
+  padding: 8px;
+  background: #f7f7f7;
+}
+
+.three{
+  padding: 3em 10em 0;
+}
+
+.three h3 {
+  /*『②他のサイバー攻撃について』のタイトルについての設定*/
+  font-size: 32px;
+  border-bottom: 4px solid #b0c4de;
+}
+
+/*---------------------------------------------------------------------------------------*/
+.Bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1b2538;
+}
+
+.Bar li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
+
+.Bar li:last-child {
+  border-right: none;
+}
+
+.Bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+.Bar li a:hover:not(.active) {
+  background-color: #a9bce2;
+}
+
+.Bar .active {
+  background-color: #da3c41;
+}
