@@ -2,13 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-}
+body {}
 
 header {
   position: fixed;
   top: 0;
 }
+
 /*------------ヘッダーの設定------------*/
 .site-header {
   /*ヘッダーの背景、ヘッダーの大本*/
@@ -38,6 +38,7 @@ header {
 .Bar li {
   float: left;
   border-right: 1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb;
 }
 
 .Bar li:last-child {
@@ -62,8 +63,7 @@ header {
   background-color: #da3c41;
 }
 
-/*------------『フィッシングの対策』の設定------------*/
-/*-----------1つ目項目の設定-----------*/
+/*------------『疑似体験振り返り』の設定------------*/
 .one {
   padding: 3em 10em 0;
 }
@@ -92,40 +92,37 @@ header {
   font-weight: bold;
 }
 
-.one .box6 {
-  /*点線のボックスの設定*/
-  padding: 0.5em 1em;
+.box17 {
   margin: 4em 0;
-  background: #f0f7ff;
-  border: dashed 2px #5b8bd0;
-  /*点線*/
+  position: relative;
+  padding: 1.5em 2.5em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
 }
 
-.one .box6 p {
-  /*点線のボックスの文字設定*/
+.box17:before, .box17:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: black;
+}
+
+.box17:before {
+  left: 10px;
+}
+
+.box17:after {
+  right: 10px;
+}
+
+.box17 p {
+  font-size: 28px;
   margin: 0;
   padding: 0;
-}
-
-.one .point_1 {
-  /*画像とポイントに関しての設定*/
-  display: flex;
-  justify-content: center;
-  /* 水平方向 */
-  align-items: center;
-  /* 垂直方向 */
-}
-
-.one .one_img {
-  /*Ⅰの画像についての設定～その１～*/
-  text-align: left;
-}
-
-.one .one_img img {
-  /*Ⅰの画像についての設定～その２～*/
-  width: 120%;
-  /* 横幅を割合で指定 */
-  height: auto;
+  text-align: center;
 }
 
 .one .box29 {
@@ -146,13 +143,98 @@ header {
 
 .one .box29 p {
   /*ポイントボックスの文字についての設定*/
+  font-size: 24px;
   padding: 10px;
   margin: 0;
+  text-align: center;
 }
 
+.one .box6 {
+  /*点線のボックスの設定*/
+  padding: 0.5em 1em;
+  margin: 2em 0 0 0;
+  background: #f0f7ff;
+  border: dashed 2px #5b8bd0;
+  /*点線*/
+}
 
-/*-----------２つ目項目の設定-----------*/
-.one .point_2 {
+.one .box6 p {
+  /*点線のボックスの文字設定*/
+  margin: 0;
+  padding: 0;
+}
+
+.one .sono p {
+  font-size: 64px;
+  text-align: center;
+}
+
+.one .Point h2 {
+  position: relative;
+  padding: 0.25em 0;
+  font-size: 38px;
+}
+
+.one .Point h2:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+
+.one .Point p {
+  font-size: 18px;
+  font-family: "メイリオ", "Meiryo";
+  font-weight: bold;
+}
+
+/*------------『フィッシングの対策』の設定------------*/
+/*-----------1つ目項目の設定-----------*/
+.two {
+  padding: 3em 10em 0;
+}
+
+.two p {
+  /*div one におけるpタグの設定*/
+  font-size: 18px;
+  font-family: "メイリオ", "Meiryo";
+  font-weight: bold;
+}
+
+.two h1 {
+  /*『①フィッシングの対策』についての設定*/
+  font-size: 32px;
+  border-bottom: 4px solid #b0c4de;
+  margin-top: 100px;
+}
+
+.two .two_a {
+  padding: 0 0 0.5em;
+}
+
+.two .two_a p {
+  font-size: 24px;
+  font-family: "游ゴシック", "Yu Gothic";
+  font-weight: bold;
+}
+
+.two .box6 {
+  /*点線のボックスの設定*/
+  padding: 0.5em 1em;
+  margin: 4em 0;
+  background: #f0f7ff;
+  border: dashed 2px #5b8bd0;
+  /*点線*/
+}
+
+.two .box6 p {
+  /*点線のボックスの文字設定*/
+  margin: 0;
+  padding: 0;
+}
+
+.two .point_1 {
   /*画像とポイントに関しての設定*/
   display: flex;
   justify-content: center;
@@ -161,13 +243,58 @@ header {
   /* 垂直方向 */
 }
 
-
-.one .two_img {
-    /*Ⅱの画像についての設定～その１～*/
+.two .one_img {
+  /*Ⅰの画像についての設定～その１～*/
   text-align: left;
+  padding: 0 2em 0 1em;
 }
 
-.one .two_img img {
+.two .one_img img {
+  /*Ⅰの画像についての設定～その２～*/
+  width: 120%;
+  /* 横幅を割合で指定 */
+  height: auto;
+}
+
+.two .box29 {
+  /*ポイントボックスについての設定*/
+  margin: 0 5em 0;
+  background: #dcefff;
+}
+
+.two .box29 .box-title {
+  /*ボックスの『Point』に関しての設定*/
+  font-size: 1.2em;
+  background: #5fb3f5;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.two .box29 p {
+  /*ポイントボックスの文字についての設定*/
+  padding: 10px;
+  margin: 0;
+}
+
+/*-----------２つ目項目の設定-----------*/
+.two .point_2 {
+  /*画像とポイントに関しての設定*/
+  display: flex;
+  justify-content: center;
+  /* 水平方向 */
+  align-items: center;
+  /* 垂直方向 */
+}
+
+.two .two_img {
+  /*Ⅱの画像についての設定～その１～*/
+  text-align: left;
+  padding: 0 5em 0 1em;
+}
+
+.two .two_img img {
   /*Ⅱの画像についての設定～その１～*/
   width: 220%;
   /* 横幅を割合で指定 */
@@ -175,7 +302,7 @@ header {
 }
 
 /*-----------３つ目項目の設定-----------*/
-.one .point_3 {
+.two .point_3 {
   /*画像とポイントに関しての設定*/
   display: flex;
   justify-content: center;
@@ -184,12 +311,12 @@ header {
   /* 垂直方向 */
 }
 
-.one .three_img {
+.two .three_img {
   /*Ⅲの画像についての設定～その１～*/
   text-align: left;
 }
 
-.one .three_img img {
+.two .three_img img {
   /*Ⅲの画像についての設定～その１～*/
   width: 90%;
   /* 横幅を割合で指定 */
@@ -197,36 +324,39 @@ header {
 }
 
 /*------------『他のサイバー攻撃について』の設定------------*/
-.two {
+.three {
   /*『②他のサイバー攻撃について』の全体についての設定*/
   margin: 2em 0;
   padding: 3em 10em 0;
 }
 
-.two h2 {
+.three h2 {
   /*『②他のサイバー攻撃について』のタイトルについての設定*/
   font-size: 32px;
   border-bottom: 4px solid #b0c4de;
 }
 
-.two label {
+.three label {
   /*『②他のサイバー攻撃について』のタグについての設定*/
   display: block;
-  padding: 8px;
-  color: #fff;
+  padding: 24px;
+  color: #000000;
   font-weight: bold;
   /*一般的な太字の太さです。（数値で700を指定した場合と同じ）*/
-  background: #999;
+  background: #00FFFF;
   cursor: pointer;
+  text-align: center;
+  font-size: 28px;
+  transition: background 1s;
   /*カーソルアイコンが指し指になる*/
 }
 
-.two input[type="checkbox"] {
+.three input[type="checkbox"] {
   /*『②他のサイバー攻撃について』のタグCLICKについての設定*/
   display: none;
 }
 
-.two .content {
+.three .content {
   /*『②他のサイバー攻撃について』のタグについての設定*/
   height: 0;
   padding: 0;
@@ -236,13 +366,13 @@ header {
   font-family: "游ゴシック", "Yu Gothic";
 }
 
-.two .content {
+.three .content {
   /*『②他のサイバー攻撃について』のタグについての設定*/
   font-size: 18px;
   font-family: "游ゴシック", "Yu Gothic";
 }
 
-.two .content span {
+.three .content span {
   /*『②他のサイバー攻撃について』のタグについての設定*/
   font-size: 22px;
   font-family: 'M PLUS 1p', sans-serif;
@@ -255,15 +385,138 @@ header {
   background: #f7f7f7;
 }
 
+.three label:hover {
+  color: #FF0000;
+  font-weight: bold;
+  background-color: #00FF00;
+}
 
 /*------------『アンケートについてについて』の設定------------*/
-
-.three {
+.four {
   padding: 3em 10em 0;
 }
 
-.three h3 {
+.four p {
+  /*div one におけるpタグの設定*/
+  font-size: 18px;
+  font-family: "メイリオ", "Meiryo";
+  font-weight: bold;
+}
+
+.four h3 {
   /*『②他のサイバー攻撃について』のタイトルについての設定*/
   font-size: 32px;
   border-bottom: 4px solid #b0c4de;
+}
+
+.four table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  padding: 2em;
+}
+
+.four table th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+.four table th:last-child {
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #3c6690;
+}
+
+.four table th {
+  text-align: center;
+  color: white;
+  background: linear-gradient(#829ebc, #225588);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+  width: auto;
+  padding: 10px 0;
+}
+
+.four table td {
+  text-align: center;
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top: none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  width: auto;
+  padding: 10px 0;
+}
+
+.four table td:last-child {
+  border-right: 1px solid #a8b7c5;
+}
+
+.four table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+.four table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+.four table td span {
+  /*『②他のサイバー攻撃について』のタグについての設定*/
+  color: red;
+}
+
+.four .Title p{
+  text-align:center;
+  padding-bottom: 2em;
+}
+
+.four .Point h4 {
+  position: relative;
+  padding: 0.25em 0;
+  font-size: 28px;
+}
+
+.four .Point h4:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+
+.four .box6 {
+  /*点線のボックスの設定*/
+  padding: 0.5em 1em;
+  margin: 2em 0 0 0;
+  background: #f0f7ff;
+  border: dashed 2px #5b8bd0;
+  /*点線*/
+}
+
+.four .box6 p {
+  /*点線のボックスの文字設定*/
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*---------------------------------------------------------------------------------------*/
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+#page_top a {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+  font-size: 24px;
+}
+
+#page_top a:hover {
+  background-color: #666;
+  text-decoration: none;
 }
