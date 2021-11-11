@@ -5,40 +5,49 @@ html {
 body {}
 
 header {
-  position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 /*------------ヘッダーの設定------------*/
 .site-header {
   /*ヘッダーの背景、ヘッダーの大本*/
   background-color: #def7ff;
-  width: 100%;
+  width: 200%;
+  position: fixed;
+}
+
+.rapper site-header__wrapper {
+  background-color: #1b2538;
+  line-height: 0;
+  display: flex;
 }
 
 .brand {
   /*ヘッダータイトル設定*/
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   color: #000000;
   /*黒*/
   text-decoration: none;
   /*アンダーライン削除*/
 }
 
+/*
 .Bar {
   /*メニューバー大本の設定*/
+/*
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #1b2538;
+  display: flex;
 }
 
 .Bar li {
   float: left;
   border-right: 1px solid #bbbbbb;
   border-left: 1px solid #bbbbbb;
+  display: flex;
 }
 
 .Bar li:last-child {
@@ -47,6 +56,7 @@ header {
 
 .Bar li a {
   /*メニューバーの文字設定*/
+/*
   display: block;
   color: white;
   text-align: center;
@@ -62,10 +72,250 @@ header {
 .Bar .active {
   background-color: #da3c41;
 }
+*/
+#hamburger .btn-gNav {
+  position: fixed;
+  margin-top: -10px;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 24px;
+  z-index: 3;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+#hamburger .btn-gNav span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #666;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+#hamburger .btn-gNav span:nth-child(1) {
+  top: 0;
+}
+
+#hamburger .btn-gNav span:nth-child(2) {
+  top: 10px;
+}
+
+#hamburger .btn-gNav span:nth-child(3) {
+  top: 20px;
+}
+
+#hamburger .btn-gNav.open span:nth-child(1) {
+  background: #fff;
+  top: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger .btn-gNav.open span:nth-child(2), #hamburger .btn-gNav.open span:nth-child(3) {
+  top: 6px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#gNav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #444;
+  font-size: 16px;
+  box-sizing: border-box;
+  z-index: 2;
+  padding-top: 50px;
+  transition: .3s;
+    z-index: 0;
+    text-align:center;
+}
+
+#gNav.open {
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+}
+
+.gNav-menu{
+  /*↓これやると、逆にメニュー起動しない*/
+  pointer-events: none;
+
+}
+
+
+#gNav .gNav-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 0;
+  text-align:center;
+  /*justify-content: center;*/
+}
+
+.gNav-menu li{
+  height: 10%;
+}
+
+#gNav .gNav-menu li {
+  display: block;
+  padding: 20px 30px;
+  margin-bottom: %;
+}
+
+#gNav .gNav-menu li a {
+  color: #ddd;
+
+    text-align:center;
+  pointer-events: auto;
+
+}
+
+.gNav-menu a{
+    text-align:center;
+}
+
+
+/*------------ヘッダーの設定(PCバージョン)------------*/
+@media screen and (min-width: 1142px) {
+  .brand {
+    /*ヘッダータイトル設定*/
+
+    font-weight: bold;
+    font-size: 40px;
+    color: #000000;
+    /*黒*/
+
+    text-decoration: none;
+    /*アンダーライン削除*/
+
+  }
+
+  .btn-gNav {
+    display: none;
+  }
+
+  #gNav {
+    position: fixed;
+    margin-top: 56px;
+    top: 0;
+    right: 0;
+    height: 50px;
+  }
+
+  #gNav .gNav-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 50px;
+    margin-top: 66px;
+  }
+  #gNav .gNav-menu li {
+    padding-top: 5px;
+  }
+
+}
+}
+
+/*------------ヘッダーの設定(スマホバージョン)------------*/
+@media screen and (max-width:480px) {
+  .site-header {
+    /*ヘッダーの背景、ヘッダーの大本*/
+    background-color: #def7ff;
+    width: 100%;
+  }
+
+  .rapper site-header__wrapper {
+    background-color: #1b2538;
+  }
+
+  .brand {
+    /*ヘッダータイトル設定*/
+    font-weight: bold;
+    font-size: 28px;
+    color: #000000;
+    /*黒*/
+    text-decoration: none;
+    /*アンダーライン削除*/
+  }
+
+  .gNav-menu{
+    /*↓これやると、逆にメニュー起動しない*/
+
+    pointer-events: none;
+
+  }
+
+
+  /*
+  .Bar {
+    /*メニューバー大本の設定*/
+  /*
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1b2538;
+  }
+
+  .Bar li {
+    float: left;
+    border-right: 1px solid #bbbbbb;
+    border-left: 1px solid #bbbbbb;
+  }
+
+  .Bar li:last-child {
+    border-right: none;
+  }
+
+  .Bar li a {
+    /*メニューバーの文字設定*/
+  /*
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    float: left;
+    font-size: 12px;
+  }
+
+  .Bar li a:hover:not(.active) {
+    background-color: #a9bce2;
+  }
+
+  .Bar .active {
+    background-color: #da3c41;
+  }
+  */
+}
 
 /*------------『疑似体験振り返り』の設定------------*/
 .one {
-  padding: 3em 10em 0;
+  padding: 3em 10% 0;
+}
+
+.one .p1 p {
+  font-size: 18px;
+  font-family: "メイリオ", "Meiryo";
+  font-weight: bold;
 }
 
 .one p {
@@ -77,7 +327,7 @@ header {
 
 .one h1 {
   /*『①フィッシングの対策』についての設定*/
-  font-size: 32px;
+  font-size: 42px;
   border-bottom: 4px solid #b0c4de;
   margin-top: 100px;
 }
@@ -125,6 +375,16 @@ header {
   text-align: center;
 }
 
+.one .zero_img {
+  text-align: center;
+  width: 100%;
+}
+
+.one .Title p {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
 .one .box29 {
   /*ポイントボックスについての設定*/
   margin: 0 5em 0;
@@ -165,14 +425,14 @@ header {
 }
 
 .one .sono p {
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
 }
 
 .one .Point h2 {
   position: relative;
   padding: 0.25em 0;
-  font-size: 38px;
+  font-size: 24px;
 }
 
 .one .Point h2:after {
@@ -189,10 +449,166 @@ header {
   font-weight: bold;
 }
 
+/*------------『疑似体験振り返り』の設定(スマホバージョン)------------*/
+@media screen and (max-width:480px) {
+  .one {
+    padding: 3em 10% 0;
+  }
+
+  .one p {
+    /*div one におけるpタグの設定*/
+    font-size: 18px;
+    font-family: "メイリオ", "Meiryo";
+    font-weight: bold;
+  }
+
+  .one h1 {
+    /*『①フィッシングの対策』についての設定*/
+    font-size: 24px;
+    border-bottom: 4px solid #b0c4de;
+    margin-top: 100px;
+  }
+
+  .one .p1 p {
+    font-size: 14px;
+    font-family: "メイリオ", "Meiryo";
+    font-weight: bold;
+  }
+
+  .one .one_a {
+    padding: 0 0 0.5em;
+  }
+
+  .one .one_a p {
+    font-size: 24px;
+    font-family: "游ゴシック", "Yu Gothic";
+    font-weight: bold;
+  }
+
+  .box17 {
+    margin: 4em 0;
+    position: relative;
+    padding: 1.5em 2.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+  }
+
+  .box17:before, .box17:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+  }
+
+  .box17:before {
+    left: 10px;
+  }
+
+  .box17:after {
+    right: 10px;
+  }
+
+  .box17 p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .one .zero_img {
+    text-align: center;
+  }
+
+  .one .zero_img img {
+    text-align: center;
+    width: 100%;
+  }
+
+  .one .Title p {
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: 9px;
+  }
+
+  .one .box29 {
+    /*ポイントボックスについての設定*/
+    margin: 0 0em 0;
+    background: #dcefff;
+  }
+
+  .one .box29 .box-title {
+    /*ボックスの『Point』に関しての設定*/
+    font-size: 1.2em;
+    background: #5fb3f5;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+
+  .one .box29 p {
+    /*ポイントボックスの文字についての設定*/
+    font-size: 14px;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .one .box6 {
+    /*点線のボックスの設定*/
+    padding: 0.5em 1em;
+    margin: 2em 0 0 0;
+    background: #f0f7ff;
+    border: dashed 2px #5b8bd0;
+    /*点線*/
+  }
+
+  .one .box6 p {
+    /*点線のボックスの文字設定*/
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .one .p2 p {
+    font-size: 14px;
+    font-family: "メイリオ", "Meiryo";
+    font-weight: bold;
+  }
+
+  .one .sono p {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .one .Point h2 {
+    position: relative;
+    padding: 0.25em 0;
+    font-size: 18px;
+  }
+
+  .one .Point h2:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+  }
+
+  .one .Point p {
+    font-size: 12px;
+    font-family: "メイリオ", "Meiryo";
+    font-weight: bold;
+  }
+}
+
 /*------------『フィッシングの対策』の設定------------*/
 /*-----------1つ目項目の設定-----------*/
 .two {
-  padding: 3em 10em 0;
+  padding: 3em 10% 0;
 }
 
 .two p {
@@ -204,7 +620,7 @@ header {
 
 .two h1 {
   /*『①フィッシングの対策』についての設定*/
-  font-size: 32px;
+  font-size: 42px;
   border-bottom: 4px solid #b0c4de;
   margin-top: 100px;
 }
@@ -323,16 +739,153 @@ header {
   height: auto;
 }
 
+/*------------『フィッシングの対策』の設定(スマホバージョン)------------*/
+@media screen and (max-width:480px) {
+  .two {
+    padding: 3em 10% 0;
+  }
+
+  .two p {
+    /*div one におけるpタグの設定*/
+    font-size: 18px;
+    font-family: "メイリオ", "Meiryo";
+    font-weight: bold;
+  }
+
+  .two h1 {
+    /*『①フィッシングの対策』についての設定*/
+    font-size: 24px;
+    border-bottom: 4px solid #b0c4de;
+    margin-top: 100px;
+  }
+
+  .two .two_a {
+    padding: 0 0 0.5em;
+  }
+
+  .two .two_a p {
+    font-size: 24px;
+    font-family: "游ゴシック", "Yu Gothic";
+    font-weight: bold;
+  }
+
+  .two .box6 {
+    /*点線のボックスの設定*/
+    padding: 0.5em 1em;
+    margin: 4em 0;
+    background: #f0f7ff;
+    border: dashed 2px #5b8bd0;
+    /*点線*/
+  }
+
+  .two .box6 p {
+    /*点線のボックスの文字設定*/
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .two .point_1 {
+    /*画像とポイントに関しての設定*/
+    display: flex;
+    justify-content: center;
+    /* 水平方向 */
+    align-items: center;
+    /* 垂直方向 */
+  }
+
+  .two .one_img {
+    /*Ⅰの画像についての設定～その１～*/
+    text-align: left;
+    padding: 0 2em 0 1em;
+  }
+
+  .two .one_img img {
+    /*Ⅰの画像についての設定～その２～*/
+    width: 120%;
+    /* 横幅を割合で指定 */
+    height: auto;
+  }
+
+  .two .box29 {
+    /*ポイントボックスについての設定*/
+    margin: 0 0em 0;
+    background: #dcefff;
+  }
+
+  .two .box29 .box-title {
+    /*ボックスの『Point』に関しての設定*/
+    font-size: 1.2em;
+    background: #5fb3f5;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+
+  .two .box29 p {
+    /*ポイントボックスの文字についての設定*/
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /*-----------２つ目項目の設定-----------*/
+  .two .point_2 {
+    /*画像とポイントに関しての設定*/
+    display: flex;
+    justify-content: center;
+    /* 水平方向 */
+    align-items: center;
+    /* 垂直方向 */
+  }
+
+  .two .two_img {
+    /*Ⅱの画像についての設定～その１～*/
+    text-align: left;
+    padding: 0 5em 0 1em;
+  }
+
+  .two .two_img img {
+    /*Ⅱの画像についての設定～その１～*/
+    width: 220%;
+    /* 横幅を割合で指定 */
+    height: auto;
+  }
+
+  /*-----------３つ目項目の設定-----------*/
+  .two .point_3 {
+    /*画像とポイントに関しての設定*/
+    display: flex;
+    justify-content: center;
+    /* 水平方向 */
+    align-items: center;
+    /* 垂直方向 */
+  }
+
+  .two .three_img {
+    /*Ⅲの画像についての設定～その１～*/
+    text-align: left;
+  }
+
+  .two .three_img img {
+    /*Ⅲの画像についての設定～その１～*/
+    width: 90%;
+    /* 横幅を割合で指定 */
+    height: auto;
+  }
+}
+
 /*------------『他のサイバー攻撃について』の設定------------*/
 .three {
   /*『②他のサイバー攻撃について』の全体についての設定*/
   margin: 2em 0;
-  padding: 3em 10em 0;
+  padding: 3em 10% 0;
 }
 
 .three h2 {
   /*『②他のサイバー攻撃について』のタイトルについての設定*/
-  font-size: 32px;
+  font-size: 42px;
   border-bottom: 4px solid #b0c4de;
 }
 
@@ -348,7 +901,21 @@ header {
   text-align: center;
   font-size: 28px;
   transition: background 1s;
+  box-shadow: 7px 7px #00FF00;
   /*カーソルアイコンが指し指になる*/
+}
+
+.three label :after {
+  background: #00479d;
+  box-sizing: border-box;
+  content: '\f067';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  height: 52px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 0px;
 }
 
 .three input[type="checkbox"] {
@@ -389,11 +956,82 @@ header {
   color: #FF0000;
   font-weight: bold;
   background-color: #00FF00;
+  box-shadow: 1px 1px #00FF00;
+}
+
+/*------------『他のサイバー攻撃について』の設定(スマホバージョン)------------*/
+@media screen and (max-width:480px) {
+  .three {
+    /*『②他のサイバー攻撃について』の全体についての設定*/
+    margin: 2em 0;
+    padding: 3em 10% 0;
+  }
+
+  .three h2 {
+    /*『②他のサイバー攻撃について』のタイトルについての設定*/
+    font-size: 24px;
+    border-bottom: 4px solid #b0c4de;
+  }
+
+  .three label {
+    /*『②他のサイバー攻撃について』のタグについての設定*/
+    display: block;
+    padding: 24px;
+    color: #000000;
+    font-weight: bold;
+    /*一般的な太字の太さです。（数値で700を指定した場合と同じ）*/
+    background: #00FFFF;
+    cursor: pointer;
+    text-align: center;
+    font-size: 28px;
+    transition: background 1s;
+    /*カーソルアイコンが指し指になる*/
+  }
+
+  .three input[type="checkbox"] {
+    /*『②他のサイバー攻撃について』のタグCLICKについての設定*/
+    display: none;
+  }
+
+  .three .content {
+    /*『②他のサイバー攻撃について』のタグについての設定*/
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-family: "游ゴシック", "Yu Gothic";
+  }
+
+  .three .content {
+    /*『②他のサイバー攻撃について』のタグについての設定*/
+    font-size: 18px;
+    font-family: "游ゴシック", "Yu Gothic";
+  }
+
+  .three .content span {
+    /*『②他のサイバー攻撃について』のタグについての設定*/
+    font-size: 22px;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: red;
+  }
+
+  .switch:checked+.content {
+    height: auto;
+    padding: 8px;
+    background: #f7f7f7;
+  }
+
+  .three label:hover {
+    color: #FF0000;
+    font-weight: bold;
+    background-color: #00FF00;
+  }
 }
 
 /*------------『アンケートについてについて』の設定------------*/
 .four {
-  padding: 3em 10em 0;
+  padding: 3em 10% 0;
 }
 
 .four p {
@@ -405,7 +1043,7 @@ header {
 
 .four h3 {
   /*『②他のサイバー攻撃について』のタイトルについての設定*/
-  font-size: 32px;
+  font-size: 42px;
   border-bottom: 4px solid #b0c4de;
 }
 
@@ -464,8 +1102,8 @@ header {
   color: red;
 }
 
-.four .Title p{
-  text-align:center;
+.four .Title p {
+  text-align: center;
   padding-bottom: 2em;
 }
 
@@ -498,7 +1136,138 @@ header {
   padding: 0;
 }
 
+.footer {
+  width: 100%;
+  background-color: #def7ff;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  height: 70px;
+  text-align: center;
+  padding: 50px 0px;
+  position: absolute;
+}
 
+/*------------『アンケートについてについて』の設定(スマホバージョン)------------*/
+@media screen and (max-width:480px) {
+  .four {
+    padding: 3em 10% 0;
+  }
+
+  .four p {
+    /*div one におけるpタグの設定*/
+    font-size: 12px;
+    font-family: "メイリオ", "Meiryo";
+    font-weight: bold;
+  }
+
+  .four h3 {
+    /*『②他のサイバー攻撃について』のタイトルについての設定*/
+    font-size: 24px;
+    border-bottom: 4px solid #b0c4de;
+  }
+
+  .four table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    padding: 0em;
+  }
+
+  .four table th:first-child {
+    border-radius: 5px 0 0 0;
+  }
+
+  .four table th:last-child {
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #3c6690;
+  }
+
+  .four table th {
+    text-align: center;
+    color: white;
+    background: linear-gradient(#829ebc, #225588);
+    border-left: 1px solid #3c6690;
+    border-top: 1px solid #3c6690;
+    border-bottom: 1px solid #3c6690;
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+    width: auto;
+    padding: 10px 0;
+  }
+
+  .four table td {
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top: none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    width: auto;
+    padding: 10px 0;
+  }
+
+  .four table td:last-child {
+    border-right: 1px solid #a8b7c5;
+  }
+
+  .four table tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+  }
+
+  .four table tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+  }
+
+  .four table td span {
+    /*『②他のサイバー攻撃について』のタグについての設定*/
+    color: red;
+  }
+
+  .four .Title p {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+
+  .four .Point h4 {
+    position: relative;
+    padding: 0.25em 0;
+    font-size: 18px;
+  }
+
+  .four .Point h4:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+  }
+
+  .four .box6 {
+    /*点線のボックスの設定*/
+    padding: 0.5em 1em;
+    margin: 2em 0 0 0;
+    background: #f0f7ff;
+    border: dashed 2px #5b8bd0;
+    /*点線*/
+  }
+
+  .four .box6 p {
+    /*点線のボックスの文字設定*/
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #def7ff;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    height: 70px;
+    text-align: center;
+    padding: 50px 0px;
+    position: absolute;
+  }
+}
 
 /*---------------------------------------------------------------------------------------*/
 #page_top {
