@@ -132,6 +132,7 @@ header {
 
 #gNav {
   position: fixed;
+  overflow: auto;
   top: 0;
   right: -100%;
   width: 100%;
