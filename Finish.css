@@ -26,7 +26,7 @@ header {
 .brand {
   /*ヘッダータイトル設定*/
   font-weight: bold;
-  font-size: 30px;
+  font-size: 26px;
   color: #000000;
   /*黒*/
   text-decoration: none;
@@ -75,7 +75,7 @@ header {
 */
 #hamburger .btn-gNav {
   position: fixed;
-  margin-top: -10px;
+  margin-top: -13px;
   top: 20px;
   right: 20px;
   width: 30px;
@@ -136,24 +136,21 @@ header {
   box-sizing: border-box;
   z-index: 2;
   padding-top: 50px;
+  padding-right: 60px;
   transition: .3s;
-    z-index: 0;
-    text-align:center;
+  z-index: 0;
+  text-align: center;
 }
 
 #gNav.open {
   right: 0px;
-  width: 100%;
-  height: 100%;
-  text-align:center;
+  text-align: center;
 }
 
-.gNav-menu{
+.gNav-menu {
   /*↓これやると、逆にメニュー起動しない*/
   pointer-events: none;
-
 }
-
 
 #gNav .gNav-menu {
   width: 100%;
@@ -162,46 +159,43 @@ header {
   flex-direction: column;
   text-align: center;
   z-index: 0;
-  text-align:center;
+  text-align: center;
   /*justify-content: center;*/
 }
 
-.gNav-menu li{
+.gNav-menu li {
   height: 10%;
+  overflow: auto;
 }
 
 #gNav .gNav-menu li {
   display: block;
   padding: 20px 30px;
   margin-bottom: %;
+  overflow: auto;
 }
 
 #gNav .gNav-menu li a {
   color: #ddd;
-
-    text-align:center;
+  text-align: center;
   pointer-events: auto;
-
+  overflow: auto;
 }
 
-.gNav-menu a{
-    text-align:center;
+.gNav-menu a {
+  text-align: center;
 }
-
 
 /*------------ヘッダーの設定(PCバージョン)------------*/
 @media screen and (min-width: 1142px) {
   .brand {
     /*ヘッダータイトル設定*/
-
     font-weight: bold;
     font-size: 40px;
     color: #000000;
     /*黒*/
-
     text-decoration: none;
     /*アンダーライン削除*/
-
   }
 
   .btn-gNav {
@@ -227,10 +221,10 @@ header {
     padding-left: 50px;
     margin-top: 66px;
   }
+
   #gNav .gNav-menu li {
     padding-top: 5px;
   }
-
 }
 }
 
@@ -256,13 +250,10 @@ header {
     /*アンダーライン削除*/
   }
 
-  .gNav-menu{
+  .gNav-menu {
     /*↓これやると、逆にメニュー起動しない*/
-
     pointer-events: none;
-
   }
-
 
   /*
   .Bar {
