@@ -192,7 +192,7 @@ header {
 }
 
 /*------------ヘッダーの設定(PCバージョン)------------*/
-@media screen and (min-width: 1142px) {
+@media screen and (min-width: 1240px) {
   .brand {
     /*ヘッダータイトル設定*/
     font-weight: bold;
@@ -1298,7 +1298,7 @@ header {
   text-decoration: none;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
   #page_top {
     position: fixed;
     bottom: 30px;
