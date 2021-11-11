@@ -170,15 +170,11 @@ header {
 }
 
 .gNav-menu li {
-  height: 10%;
-  overflow: auto;
-  overflow-x: hidden;
 }
 
 #gNav .gNav-menu li {
   display: block;
   padding: 20px 30px;
-  overflow: auto;
   text-decoration: none;
   padding-bottom: 60px;
 }
@@ -187,7 +183,6 @@ header {
   color: #ddd;
   text-align: center;
   pointer-events: auto;
-  overflow: auto;
   text-decoration: none;
 }
 
@@ -244,6 +239,18 @@ header {
     /*ヘッダーの背景、ヘッダーの大本*/
     background-color: #def7ff;
     width: 100%;
+  }
+
+  #gNav .gNav-menu li a {
+    color: #ddd;
+    text-align: center;
+    pointer-events: auto;
+    text-decoration: none;
+  }
+
+  .gNav-menu a {
+    text-align: center;
+    text-decoration: none;
   }
 
   .rapper site-header__wrapper {
@@ -1289,4 +1296,26 @@ header {
 #page_top a:hover {
   background-color: #666;
   text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+  #page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+  }
+
+  #page_top a {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 24px;
+  }
+
+  #page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+  }
 }
