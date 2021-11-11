@@ -1,12 +1,16 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-body {}
+body {
+  overflow-x: hidden;
+}
 
 header {
   top: 0;
   z-index: 2;
+  overflow-x: hidden;
 }
 
 /*------------ヘッダーの設定------------*/
@@ -15,6 +19,7 @@ header {
   background-color: #def7ff;
   width: 200%;
   position: fixed;
+  overflow-x: hidden;
 }
 
 .rapper site-header__wrapper {
@@ -166,6 +171,7 @@ header {
 .gNav-menu li {
   height: 10%;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 #gNav .gNav-menu li {
@@ -173,6 +179,7 @@ header {
   padding: 20px 30px;
   margin-bottom: %;
   overflow: auto;
+  text-decoration: none;
 }
 
 #gNav .gNav-menu li a {
@@ -180,10 +187,12 @@ header {
   text-align: center;
   pointer-events: auto;
   overflow: auto;
+  text-decoration: none;
 }
 
 .gNav-menu a {
   text-align: center;
+  text-decoration: none;
 }
 
 /*------------ヘッダーの設定(PCバージョン)------------*/
