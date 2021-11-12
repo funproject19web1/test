@@ -449,7 +449,7 @@ header {
 /*------------『疑似体験振り返り』の設定(スマホバージョン)------------*/
 @media screen and (max-width:480px) {
   #one{
-  margin-top:30px;
+  margin-top:50px;
   }
   
   .one {
