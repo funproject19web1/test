@@ -47,18 +47,15 @@ header {
   background-color: #1b2538;
   display: flex;
 }
-
 .Bar li {
   float: left;
   border-right: 1px solid #bbbbbb;
   border-left: 1px solid #bbbbbb;
   display: flex;
 }
-
 .Bar li:last-child {
   border-right: none;
 }
-
 .Bar li a {
   /*メニューバーの文字設定*/
 /*
@@ -69,11 +66,9 @@ header {
   text-decoration: none;
   float: left;
 }
-
 .Bar li a:hover:not(.active) {
   background-color: #a9bce2;
 }
-
 .Bar .active {
   background-color: #da3c41;
 }
@@ -282,17 +277,14 @@ header {
     overflow: hidden;
     background-color: #1b2538;
   }
-
   .Bar li {
     float: left;
     border-right: 1px solid #bbbbbb;
     border-left: 1px solid #bbbbbb;
   }
-
   .Bar li:last-child {
     border-right: none;
   }
-
   .Bar li a {
     /*メニューバーの文字設定*/
   /*
@@ -304,11 +296,9 @@ header {
     float: left;
     font-size: 12px;
   }
-
   .Bar li a:hover:not(.active) {
     background-color: #a9bce2;
   }
-
   .Bar .active {
     background-color: #da3c41;
   }
@@ -337,7 +327,6 @@ header {
   /*『①フィッシングの対策』についての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
-  margin-top: 60px;
 }
 
 .one .one_a {
@@ -474,7 +463,7 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   .one .p1 p {
