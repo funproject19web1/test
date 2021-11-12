@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* scroll-padding-top: "被ってるpx(高さ)" */
+  scroll-padding-top: 200px;
 }
 
 body {
@@ -327,8 +330,7 @@ header {
   /*『①フィッシングの対策』についての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
-  margin-top: 110px
-
+  margin-top: 60px;
 }
 
 .one .one_a {
@@ -450,10 +452,6 @@ header {
 
 /*------------『疑似体験振り返り』の設定(スマホバージョン)------------*/
 @media screen and (max-width:480px) {
-  #one{
-  margin-top:50px;
-  }
-  
   .one {
     padding: 3em 10% 0;
   }
@@ -469,7 +467,7 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-    padding-top: 80px;
+    padding-top: 50px;
   }
 
   .one .p1 p {
