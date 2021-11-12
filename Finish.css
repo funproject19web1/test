@@ -448,6 +448,10 @@ header {
 
 /*------------『疑似体験振り返り』の設定(スマホバージョン)------------*/
 @media screen and (max-width:480px) {
+  #one{
+  margin-top:30px;
+  }
+  
   .one {
     padding: 3em 10% 0;
   }
@@ -463,7 +467,7 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-    padding-top: 60px;
+    padding-top: 30px;
   }
 
   .one .p1 p {
