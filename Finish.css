@@ -142,7 +142,7 @@ header {
   box-sizing: border-box;
   z-index: 2;
   padding-top: 20px;
-  padding-right: 60px;
+  padding-right: 75px;
   transition: .3s;
   z-index: 0;
   text-align: center;
@@ -337,7 +337,7 @@ header {
   /*『①フィッシングの対策』についての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .one .one_a {
@@ -474,7 +474,7 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-    margin-top: 100px;
+    margin-top: 30px;
   }
 
   .one .p1 p {
@@ -613,6 +613,9 @@ header {
   }
 }
 
+@media screen and (min-width: 1240px) {
+}
+
 /*------------『フィッシングの対策』の設定------------*/
 /*-----------1つ目項目の設定-----------*/
 .two {
@@ -630,7 +633,7 @@ header {
   /*『①フィッシングの対策』についての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .two .two_a {
@@ -764,7 +767,7 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-    margin-top: 100px;
+    margin-top: 20px;
   }
 
   .two .two_a {
@@ -895,6 +898,7 @@ header {
   /*『②他のサイバー攻撃について』のタイトルについての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
+  margin-top: 110px;
 }
 
 .three label {
@@ -979,6 +983,7 @@ header {
     /*『②他のサイバー攻撃について』のタイトルについての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
+    margin-top: 30px;
   }
 
   .three label {
@@ -1053,6 +1058,7 @@ header {
   /*『②他のサイバー攻撃について』のタイトルについての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
+  margin-top: 110px;
 }
 
 .four table {
@@ -1173,6 +1179,8 @@ header {
     /*『②他のサイバー攻撃について』のタイトルについての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
+    margin-top: 30px;
+
   }
 
   .four table {
