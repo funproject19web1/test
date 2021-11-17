@@ -340,7 +340,9 @@ header {
   /*『①フィッシングの対策』についての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
+  /*
   margin-top: 60px;
+  */
 }
 
 .one .one_a {
@@ -463,7 +465,7 @@ header {
 /*------------『疑似体験振り返り』の設定(スマホバージョン)------------*/
 @media screen and (max-width:480px) {
   .one {
-    padding: 3em 10% 0;
+    padding: 0em 10% 0;
   }
 
   .one p {
@@ -477,7 +479,9 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-    padding-top: 50px;
+
+    padding-top: 30px;
+
   }
 
   .one .p1 p {
