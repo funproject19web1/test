@@ -3,7 +3,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   /* scroll-padding-top: "被ってるpx(高さ)" */
-  scroll-padding-top: 200px;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -413,7 +413,7 @@ header {
 .one .box6 {
   /*点線のボックスの設定*/
   padding: 0.5em 1em;
-  margin: 2em 0 0 0;
+  margin: 2em 0 8em 0;
   background: #f0f7ff;
   border: dashed 2px #5b8bd0;
   /*点線*/
@@ -612,7 +612,7 @@ header {
 /*------------『フィッシングの対策』の設定------------*/
 /*-----------1つ目項目の設定-----------*/
 .two {
-  padding: 3em 10% 0;
+  padding: 0em 10% 0;
 }
 
 .two p {
@@ -626,7 +626,9 @@ header {
   /*『①フィッシングの対策』についての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
-  margin-top: 110px;
+  /*
+  margin-top: 50px;
+  */
 }
 
 .two .two_a {
@@ -760,7 +762,6 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-    padding-top: 50px;
   }
 
   .two .two_a {
