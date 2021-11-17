@@ -340,9 +340,7 @@ header {
   /*『①フィッシングの対策』についての設定*/
   font-size: 42px;
   border-bottom: 4px solid #b0c4de;
-  /*
   margin-top: 60px;
-  */
 }
 
 .one .one_a {
@@ -479,8 +477,7 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-
-    padding-top: 30px;
+    padding-top: 20px;
 
   }
 
