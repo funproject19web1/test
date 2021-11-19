@@ -97,7 +97,39 @@
     top: 300px;
   }
 
-  .submit-button1 {
+  #submit-button1 button{
     margin-bottom: 15px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;;
+    padding-top: 5px;
+    padding-bottom: auto;
+    font-size: 15px;
+  }
+  .submit-button1{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  #caution {
+    height: 120%;
+    width: 110%;
+  }
+
+  #caution1 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #finish2 {
+    font-size: 18px;
+  }
+
+  #caution1 p {
+    font-size: 18px;
+  }
+
+  #submit-last {
+    font-size: 18px;
   }
 }
