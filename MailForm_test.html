@@ -2,34 +2,21 @@
 <html lang="jp">
 
 <head>
-	<title>メール送信画面</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<!-- jquery読み込み -->
+	<!-- title未指定 -->
+	<title></title>
+	<!-- jquery読み込み いじるな-->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- CSS読み込み -->
-	<link rel="stylesheet" href="MailForm_test.css">
-	<link rel="stylesheet" href="MailForm_test_mobile.css">
+	<!-- <link rel="stylesheet" href="../CSS/pc_mobile_thirdform_No1.css">
+	<link rel="stylesheet" href="../CSS/pc_mobile_thirdform_No2.css"> -->
+	<link rel="stylesheet" href="pc_mobile_thirdform_No1.css">
+	<link rel="stylesheet" href="pc_mobile_thirdform_No2.css">
 </head>
 
 <body>
-	<!-- ほろ酔い -->
-	<!-- <section id="horo">
-		<div class="horo-first">
-			<p1>
-				本サイトでは、フィッシング詐欺を疑似的に体験することができます。
-				<br><br>
-				個人情報の漏洩防止のために、メールアドレス等の<br><br>個人情報を
-
-				入力する際は架空のものを使用してください。
-				<br><br>
-				疑似体験者様がこれから入力する情報は、記録されないため安心して体験してください。
-			</p1>
-			<button id="button1" type="button" name="button1">疑似体験を始める</button>
-			<a href="topのリンク">TOPに戻る</a>
-		</div>
-	</section> -->
 
 	<!--お問合せフォーム-->
 	<section id="frm">
@@ -116,16 +103,17 @@
 					このような状況を防ぐためにフィッシング詐欺の対策について学びましょう。
 				</p>
 				<br><br><br>
-				<button id="submit-last">対策ページへ</button>
+				<button id="submit-last">対策</button>
 			</div>
 		</div>
 	</section>
 
-	<script type="text/javascript" src="MailForm_test.js"></script>
+	<!-- <script type="text/javascript" src="../JavaScript/pc_mobile_thirdform.js"></script> -->
+	<script type="text/javascript" src="pc_mobile_thirdform.js"></script>
 	<script type="text/javascript">
 		document.getElementById("submit-last").onclick = function() {
-			alert('最終画面へ');
-			location.href = "LastPage.html";
+			//最終ページへのパス指定
+			location.href = "最終ページ.html";
 		};
 	</script>
 	<script type="text/javascript">
@@ -148,9 +136,9 @@
 			document.getElementById("my-name").value = "フィッシング太郎";
 			//document.getElementById("gen").value = "bbb";
 			document.getElementById("phone-num").value = "050-1234-5678";
-			document.getElementById("first-pass").value = "phishing0123";
-			document.getElementById("re-pass").value = "phishing0123";
-			document.getElementById("address").value = "phishing0721@fun.ac.jp";
+			//document.getElementById("first-pass").value = "phishing0123";
+			//document.getElementById("re-pass").value = "phishing0123";
+			document.getElementById("address").value = "phishing0710@fun.ac.jp";
 		}
 	</script>
 </body>
