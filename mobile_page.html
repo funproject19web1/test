@@ -3,58 +3,209 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="mobile_page.css">
+  <!-- <link rel="stylesheet" href="../CSS/mobile_page.css"> -->
+    <!-- <link rel="stylesheet" href="../CSS/mobile_page_secondform.css"> -->
+        <link rel="stylesheet" href="mobile_page_secondform.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- ↓　いじらない　↓ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- title未指定 -->
   <title></title>
 </head>
 
 <body>
-  <div class="head-container">
-    <div class="box"><a href="#">
-        <<メールボックス< /a>
+  <!-- ほろ酔い -->
+  <section id="horo">
+    <div class="horo-first">
+      <p>
+        <br>
+        プロローグ
+        <br><br>
+        未来大生のわたしは、いつも通りの
+        <br><br>
+        平凡な日常を送っていた
+        <br><br>
+        1限が始まる5分前に起床し、授業が
+        <br><br>
+        終わればバイトへ行く
+        <br><br>
+        そして朝方までSNSなどを見て時間
+        <br><br>
+        を過ごす
+        <br><br>
+        わたしは寝床につく直前に、その日
+        <br><br>
+        に送られたメールを確認する
+        <br><br>
+        現在時刻は朝4時
+        <br><br>
+        「1限あるからもう寝ないとな。メ
+        <br><br>
+        ール確認して寝るかな...」
+        <br><br>
+        そう思い、メールボックスを開く
+        <br><br>
+        メールボックスを開くと心当たりの
+        <br><br>
+        ないメールが届いていた
+        <br><br>
+        それはamazone.co.jpからのもの
+        <br><br>
+        であった
+        <br><br>
+        件名を見ると”セキュリティ警告”と
+        <br><br>
+        書かれている
+        <br><br>
+        「”セキュリティ”だから
+        <br><br>
+        ”個人情報の再確認”についてかな」
+        <br><br>
+        「”amazone”に心当たりはないけ
+        <br><br>
+        ど’アカウント停止’になるのは困るな」
+        <br><br>
+        「よくわからないけど重要なメール
+        <br><br>
+        っぽいし...」
+        <br><br>
+        「確認してみよう...」
+      </p> <button id="button1" type="button" name="button1">続ける</button>
     </div>
-    <div class="edit"><a href="#">編集</a></div>
-  </div>
-  <div class="jushin">
-    <h1>受信</h1>
-  </div>
-  <div class="column">
-    <div class="title" ontouchstart="">
-      <div class="title-time" id="title">
-        <p1>title</p1>
-        <p2>time</p2>
+  </section>
+
+  <section id="mail-box">
+
+    <div class="head-container">
+      <div class="box"><a href="#">
+          <<メールボックス </a>
       </div>
-      <p3>本文</p3>
-      <br><br>
+      <div class="edit"><a href="#">編集</a></div>
     </div>
-    <div class="title-time">
-      本文
-    </div> <br><br>
-    <div class="title-time">
-      本文
-    </div> <br><br>
-    <div class="title-time">
-      本文
-    </div> <br><br>
-    <div class="title-time">
-      本文
-    </div> <br><br>
-    <div class="title-time">
-      本文
-    </div> <br><br>
-  </div>
-  <div class="back" target="_blank">
-    <div class="honbun">
-      aaa
+    <div class="jushin">
+      <h1>受信</h1>
+    </div>
+    <div class="column">
+      <div class="title" ontouchstart="">
+        <div class="title-time" id="title">
+          <p1><span style="color: blue">●</span>[重要]セキュリティ警告</p1>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p2>15:00></p2>
+        </div>
+        <p id="title-words">
+          新しいデバイスからお客様のアカウントへ
+          のサインインが検出されました。
+          当社の保護におけるセキュリティと整合性の問題によ
+        </p>
+      </div>
+      <hr>
+      <div class="title-time1">
+        <p1>会員特典のご案内</p1>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;<p2>15:00></p2>
+        <p id="title-words">
+          このメールは会員の方で会員特典のサービスを未体験の方にお送りしています。
+          タイトルの左上にロゴのある映画・TV番組は、会員
+        </p>
+        <hr>
+      </div> <br>
+      <div class="title-time1">
+        <p1>iPhone Mania</p1>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p2>15:00></p2>
+        <p id="title-words">
+          新しい記事が投稿されました。「iPhone12」は
+          最低ストレージ容量が32GBに引き上げ？WSJが今夜に予測
+          を発表する予定で今後の
+        </p>
+        <hr>
+      </div> <br>
+      <div class="title-time1">
+        <p1>CloudMagic</p1>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p2>15:00></p2>
+        <p id="title-words">
+          CloudMagic now connected to Pocket,
+          Evenote, Trello, Zendesk and more
+          [1]introducing CloudMagic Cards -
+        </p>
+        <hr>
+      </div> <br>
+    </div>
+  </section>
+  <div class="back">
+    <div class="title-up">
+      <p id="gohome">戻る</p>
+      <hr>
+    </div>
+    <div class="back-under">
+      <div class="back-title">
+        <!-- <img id="icon" src="icon.png" width="50" height="50">
+        <p1>[重要]セキュリティ警告</p1>
+        <p2>15:00</p2> -->
+        <table width="100%">
+          <th>
+          <td width="50px"><img id="icon" src="icon.png" height="50"></td>
+          <td align="left" valign="top"><span class="back-title">アクセス障害について</span><br>15:00</td>
+          <!-- <td align="right" valign="top">15:00</td> -->
+          </th>
+        </table>
+        <hr>
+      </div>
+      <div class="back-honbun">
+        <p>
+          尊敬するお客様、新しいデバイスからお客様のアカウントへのサインイン
+          が検出されました。<br><br>
+          デバイス：<span style="font-weight: 800">Windows</span>(デスクトップ)<br>
+          付近：<span style="font-weight: 800">Japan</span><br><br>
+
+
+
+          これがお客様ご自身による操作だった場合、このメッセージは無視してください。
+          <a href="#">そうでない場合は、お知らせください。</a>
+          <br><br>
+          <span style="font-weight: 800">1.</span>口座番号とその暗証番号、電話番号、メールアドレスをすぐに入力できるように準備します。
+          <br><br>
+          <span style="font-weight: 800">2.</span>このメールに添付されているURLへアクセスします。
+          <br><br>
+          <span style="font-weight: 800">3.</span>手順に従い、入力を完了してください。
+          <br><br>
+          当社の保護におけるセキュリティと
+          整合性の問題により、アカウントがロックされます。ア
+          カウントを引き続き続きご使用になる場合、下記urlより
+          情報を更新する必要があります。更新しなかった場合お
+          客様のアカウントは永久ロックとなります。<br>
+        </p>
+        <<↓↓クリック↓↓>>　<br>
+        <!-- pc_mobile_thirdform.htmlへのパス指定 -->
+        <a href="pc_mobile_thirdform.html">http://amazone.com</a>
+      </div>
     </div>
   </div>
+
   <script type="text/javascript">
-    var $target = document.querySelector('.title')
-    var $button = document.querySelector('.back')
-    $target.addEventListener('click', function() {
+    $('#button1').click(function() {
+      $('#horo').hide();
+    });
+    $('.title').click(function() {
       $('.back').fadeIn();
-    })
+    });
+    $('#gohome').click(function() {
+      $('.back').hide();
+    });
+    $('.title').click(function() {
+      $('#mail-box').hide();
+    });
+    $('#gohome').click(function() {
+      $('#mail-box').fadeIn();
+    });
+    // $('.back-honbun p1').click(function() {
+    //   location.href = "../HTML/MailForm_test.html"
+    // });
+    $('idまたはclass').click(function() {
+      //mainへのパス指定
+      location.href = "mainのurl"
+    });
   </script>
 </body>
 
