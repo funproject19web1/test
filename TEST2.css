@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+html {
+  background-color: #66FFFF;
+}
+
+header {
+  background: #00CCFF;
+  height: 30px;
+}
+
+#header-menu {
+  margin-top: 0;
+  color: white;
+  font-size: 13px;
+  line-height: 30px;
+}
+.container {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+}
+
+.box {
+  display: table-cell;
+  text-align: center;
+  color: #fff;
+  height: 600px;
+}
+
+.left-display {
+  background-color: white;
+  vertical-align: top;
+  width: 15%;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.left-display button {
+  text-align: center;
+}
+
+.left-display p {
+  text-align: left;
+  font-size: 15px;
+  color: black;
+}
+
+.left-display h1 {
+  text-align: center;
+  font-size: 15px;
+  color: blue;
+}
+
+.right-display {
+  background: white;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.right-display p1 {
+  font-size: 15px;
+  color: black;
+}
+
+.right-display p2 {
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+
+.right-heading table{
+  font-size: 15px;
+  color: black;
+  background-color: #CCFFFF;
+  border: solid;
+  border-color: #66FFFF;
+}
+/*------------------------*/
+.secList {
+  font-size:15px;
+}
+.et_pb_module{
+  color: black;
+}
+.et_pb_text_inner1 {
+  position:absolute;
+  top: 200px;
+  background-color: white;
+  margin-bottom: 0px;
+  margin-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid 1px #000;
+  color: #000;
+}
+
+.right-display table{
+	table-layout:fixed;
+}
+.right-display table td{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+th.main{
+  padding-left: 10%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+td.main{
+  width: 25%;
+  text-align: center;
+}
+td.head{
+  width: 100px;
+  text-align-last: justify;
+}
+td.cell{
+  text-align: left;
+}
+p.justify{
+  text-align: justify;
+  text-justify: inter-ideograph;
+  border-top: 1px solid #d3d3d3;
+  padding-top: 20px;
+}
+a{
+  text-decoration: none;
+  background-color: white;
+}
