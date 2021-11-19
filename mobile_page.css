@@ -4,6 +4,7 @@
     height: 100%;
     color: black;
     margin: 0;
+     margin-top: 3%;
   }
 
   .head-container {
@@ -28,35 +29,117 @@
     font-size: 15px;
     text-align: center;
     height: auto;
-    background-color: blue;
+    background-color: silver;
   }
 
   .title-time {
     width: 100%;
     margin-bottom: 10px;
   }
-  span{
+#title-words{
+  font-size: 13px;
+  color: silver;
+}
+  span {
     width: 50%;
+  }
+
+  .title-time p1 {
+    font-weight: 800;
   }
 
   .title-time p2 {
     text-align: right;
   }
-  .title:hover{
-background-color: red;
-}
-.title:active{
-  background-color: red;
-}
-.back{
-  background-color: black;
-visibility: hidden;
-  position: absolute;
-  top: 300px;
-  left: 5px;
-  width: 100%;
-  height: 50%;
-  z-index: 1;
-}
 
+  .title:hover {
+  background-color: silver;
+  }
+
+  .title:active {
+    background-color: silver;
+  }
+
+  .title-time1 p1 {
+    font-weight: 800;
+  }
+
+  .back {
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .title-up {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: silver;
+  }
+
+  #gohome {
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    background-color: silver;
+  }
+
+  .back-title {
+    font-weight: 800;
+  }
+
+  #horo {
+    position: absolute;
+    width: 100%;
+    height: 710px;
+    left: 0;
+    top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: black;
+    /* background-color: gray; */
+    /* background: rgba(255, 255, 255, 0.75); */
+    background: rgba(0, 0, 0, 0.9);
+    /* background-size: 500px,1000px; */
+    /* opacity: 0.85; */
+    z-index: 1;
+  }
+
+  .horo-first {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .horo-first p {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: red;
+    font-weight: 600;
+    font-size: 15px;
+    width: 250px;
+    height: 500px;
+    margin-bottom: 10px;
+    border: dotted;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-color: black;
+  }
+
+  #button1 {
+    background-color: #9900FF;
+    color: white;
+  }
+  .title-time1 #title-words{
+    font-size: 13px;
+    color: silver;
+  }
+  .column{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
