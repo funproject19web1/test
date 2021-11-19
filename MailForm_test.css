@@ -190,6 +190,8 @@ th span {
 
 .submit-button1 {
   text-align: center;
+  margin-left: 210px;
+  margin-right: 210px;
 }
 
 .submit-button2 {
@@ -231,6 +233,7 @@ button:hover {
 } */
 #caution{
   display: none;
+  width: 80%;
 }
 
 #finish {
