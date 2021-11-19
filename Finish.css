@@ -192,6 +192,8 @@ header {
   text-align: center;
   pointer-events: auto;
   text-decoration: none;
+  font-size: 17.5px;
+
 }
 
 .gNav-menu a {
@@ -423,7 +425,7 @@ header {
 .one .box6 {
   /*点線のボックスの設定*/
   padding: 0.5em 1em;
-  margin: 2em 0 8em 0;
+  margin: 2em 0 3em 0;
   background: #f0f7ff;
   border: dashed 2px #5b8bd0;
   /*点線*/
@@ -477,7 +479,7 @@ header {
     /*『①フィッシングの対策』についての設定*/
     font-size: 24px;
     border-bottom: 4px solid #b0c4de;
-    padding-top: 20px;
+    padding-top: 30px;
 
   }
 
@@ -1288,6 +1290,29 @@ header {
     padding: 50px 0px;
     position: absolute;
   }
+}
+
+/*------------『参考文献』の設定------------*/
+.five {
+  padding: 3em 10% 0;
+}
+
+.five p {
+  /*div one におけるpタグの設定*/
+  font-size: 18px;
+  font-family: "メイリオ", "Meiryo";
+  font-weight: bold;
+}
+
+.five h1 {
+  /*『②他のサイバー攻撃について』のタイトルについての設定*/
+  font-size: 42px;
+  border-bottom: 4px solid #b0c4de;
+  margin-top: 38px;
+}
+
+/*------------『参考文献』の設定(スマホバージョン)------------*/
+@media screen and (max-width:480px) {
 }
 
 /*---------------------------------------------------------------------------------------*/
