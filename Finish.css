@@ -393,6 +393,19 @@ header {
   width: 100%;
 }
 
+.one .zero_2_img {
+  text-align: center;
+  width: 100%;
+}
+
+
+.one .zero_2_img img {
+  text-align: center;
+  width: 840px;
+  height: auto;
+  border: 2px solid #000000;
+}
+
 .one .Title p {
   text-align: center;
   padding-bottom: 2em;
