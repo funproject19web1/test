@@ -6,8 +6,8 @@ $('.submit-button1').click(function() {
   //var tel = $('[name="tel"]').val();
   var tel = document.getElementById('phone-num').value.replace(/[━.*‐.*―.*－.*\-.*ー.*\-]/gi,'');
   var mail = $('[name="mail"]').val();
-  var password = $('[name="password"]').val();
-  var confirm = $('[name="confirm"]').val();
+  //var password = $('[name="password"]').val();
+  //var confirm = $('[name="confirm"]').val();
 
   //$("#finish1").html('<h1>メール送信完了</h1>'+'<br>');
   $("#finish2").html('名前:' +name +'<br>' + 'メールアドレス:'+mail +'<br>'+'電話番号:'+tel+'<br>'+'パスワード:'+password);
